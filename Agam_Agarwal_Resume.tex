@@ -1,0 +1,235 @@
+\documentclass[9pt]{extarticle}
+
+\usepackage[margin=0.7in]{geometry}
+\usepackage{multicol}
+\usepackage[none]{hyphenat}
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+
+%for formatting section headings
+\newcommand{\heading}[1]{
+\section*{\color{red}\underline{#1}}
+}
+
+%dont add spacing before lists
+\usepackage{enumitem}
+\setlist{nolistsep}
+\setlist{nosep}
+
+\usepackage[colorlinks]{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue
+}
+
+\begin{document}
+
+\begin{table}[ht]
+\begin{minipage}{0.2\linewidth}
+\includegraphics[width=0.8\linewidth]{iith}
+\end{minipage}
+\begin{minipage}{0.4\linewidth}
+\begin{flushleft}
+\textbf{Agam Agarwal \\
+UG Fourth Year (B.Tech) \\
+Computer Science and Engineering \\
+Indian Institute of Technology, Hyderabad}
+\end{flushleft}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.4\linewidth}
+\begin{flushleft}
+\textbf{Email: \href{mailto:cs12b1003@iith.ac.in}{cs12b1003@iith.ac.in} \\
+Personal Email: \href{mailto:agammaster@gmail.com}{agammaster@gmail.com} \\
+Profile- \url{in.linkedin.com/in/agamagarwal} \\
+Contact - +91-950-500-8963}
+\end{flushleft}
+\end{minipage}
+\end{table}
+
+\heading{Education}
+
+\rowcolors{2}{white}{gray!25}
+\begin{tabular}{lllll}
+\textbf{Examination} & \textbf{University/Board} & \textbf{Institute} & \textbf{Year} & \textbf{CGPA/\%} \\
+Graduation (on going) & IIT Hyderabad & IIT Hyderabad & 2016 & 9.75 (till 6th semester) \\
+Intermediate & ISC & City Montessori School, Chowk & 2012 & 94.33 \\
+High School & ICSE & City Montessori School, Chowk & 2010 & 94.14
+\end{tabular}
+
+\heading{Achievements}
+
+\begin{itemize}
+\item Won \textbf{Microsoft's Capture the Flag} (a national-level information security and hacking competition) for two years: \textbf{first} place in \textbf{HackCon'14} and \textbf{second} place in \textbf{Build the Shield'15}.
+
+\item Secured the \textbf{second} place in OpenSoft challenge in \textbf{Inter IIT Tech Meet-2015}.
+
+\item Cleared \textbf{ACM-ICPC} Online Contest in 2013. Participated in the \textit{Regional Round} held on December, 2013.
+
+\item Secured the \textbf{highest CGPA} in the batch for three consecutive years 2012-2015. Received the \textbf{Academic Excellence Award} for it in 2012-2013 and 2014-2015.
+
+\item Recipient of the \textbf{National Talent Search (NTS) Scholarship} under \textit{NCERT, New Delhi}.
+
+\item Received a scholarships for being in the \textbf{top 0.1\%} students in \textit{Maths} in Class XII Intermediate Board Exam and in both \textit{Maths} and \textit{Computer Science \& Applications} in Class X High School Board Exam.
+
+\item Cleared \textbf{Regional Maths Olympiad (RMO)} for the state Uttar Pradesh for three consecutive years 2010-2012.
+
+\item Won the \textbf{silver} medal in individual’s competitions in \textit{International Young Mathematicians’ Convention 2010}.
+
+\item Secured the \textbf{first} place in \textit{Mental Ability Quiz}, \textbf{second} place in \textit{Science Quiz}, and \textbf{third} place in \textit{Mathematics Quiz} in \textit{Quanta 2011} (International Competition for Science, Mathematics, Mental Ability and Electronics).
+
+\item Awarded the \textit{Best All-Rounder} by School for the session 2011-2012.
+\item Made \textbf{5 preliminary asteroid discoveries} along with partner Ajay Kumar Singh for \textit{All India Asteroid Search Campaign} under \textit{International Astronomical Search Collaboration}.
+
+\item Participated in \textit{International Students Science Fair 2006, Busan, South Korea} in Class VII.
+\end{itemize}
+
+
+\heading{Work Experience}
+
+\textbf{Microsoft IDC} (\url{www.microsoft.com}) - Software Engineering Intern \hfill (May'15 - July'15)
+\begin{itemize}
+\item Worked on ``Neighbourhood Inference for Bing Map Local Entitie".
+\item The project involved inferring Locality information for entities based on the available information.
+\end{itemize}
+\space
+\textbf{IIT Hyderabad} (\url{www.iith.ac.in}) - Teaching Assistant for \textit{Principles of Programming Languages} course \\ and \textit{Compilers} course \hfill (Jan'15 - Apr'15) \& (Aug'15 - Nov'15)
+\begin{itemize}
+\item Worked with Dr Ramakrishna Upadrasta as a teaching assistant.
+\item Helped in designing the course structure, assignments and in evaluations of projects.
+\end{itemize}
+\space
+\textbf{Zettata} (\url{www.zettata.com}) - Software Engineering Intern \hfill (May'14 - July'14)
+\begin{itemize}
+\item Worked on projects based on product classification and natural language processing (Portuguese).
+\end{itemize}
+\space
+\textbf{Kaddy} (\url{www.kaddy.co}) - Developer \hfill (Feb'14 - Apr'14)
+\begin{itemize}
+\item Worked on a project educational data analysis using the Django framework.
+\end{itemize}
+
+\heading{Projects}
+
+\textbf{Visualizing Network Topology} \textit{Guide: Dr Kotaro Kataoka, CSE Dept., IIT Hyderabad} \hfill (Jan'15 - March'15)
+\begin{itemize}
+\item Worked in a team of 3 to write a software, which uses SNMP and LLDP to crawl the network and displays the calculated network as a
+graph.
+\end{itemize}
+\space
+\textbf{Summarized Network Histories} \textit{Guide: Dr Kotaro Kataoka, CSE Dept., IIT Hyderabad} \hfill (Jan'15 - April'15)
+\begin{itemize}
+\item Worked in a team of 4 to research on the problem of summarized network histories.
+\item Implemented a basic version of HotSwap (Laurent Vanbever et. al.) using Ryu OpenFlow controller.
+\end{itemize}
+\space
+\textbf{Facial Expression Recognition} \textit{Guide: Dr C. Krishna Mohan, CSE Dept., IIT Hyderabad} \hfill (Jan'15 - April'15)
+\begin{itemize}
+\item Worked in a team of 4 to implement ``A vision-based hybrid method for facial expression recognition" (X. Huang, Y. Lin).
+\end{itemize}
+\space
+\textbf{WebRTC over IPv6} \textit{Guide: Dr Kotaro Kataoka, CSE Dept., IIT Hyderabad} \hfill (Nov'14 - Dec'14)
+\begin{itemize}
+\item Worked in a team of 4 to develop a real-time communication system which works for IPv6.
+\end{itemize}
+\space
+\textbf{LLVM Compiler for COOL} \textit{Guide: Dr Ramakrishna Upadrasta, CSE Dept., IIT Hyderabad} \hfill (Oct'14 - Nov'14)
+\begin{itemize}
+\item A compiler (phases: lexical analyser, parser, semantic analyser and code generator) which converts \textit{Classroom Object Oriented Language} code into LLVM-IR.
+\item Worked in a team of 2 to write the compiler in \textbf{C++} as a part of the course curriculum.
+\end{itemize}
+\space
+\textbf{Peer-to-Peer Chat Application} \textit{Guide: Dr Kotaro Kataoka, CSE Dept., IIT Hyderabad} \hfill (Aug'14)
+\begin{itemize}
+\item A console-based peer-to-peer chat application. A central server maintains list of online clients using clients’ heartbeats; clients communicate with each other over private virtual connections.
+\item Written in \textbf{Java}, using \textbf{UDP} as the transport layer protocol.
+\end{itemize}
+\space
+\textbf{Battleship (2-player)} \textit{Self-motivated} \hfill (May'14)
+\begin{itemize}
+\item A GUI-based version of the Battleship game based on a client-server model.
+\item Written in \textbf{Java}, using \textbf{TCP} as the transport layer protocol.
+\end{itemize}
+\textbf{Image Fun} \hfill (Apr'14)
+\begin{itemize}
+\item An image-editing \textbf{Android} application based on a client-server model.
+\item The backend was written in \textbf{Java}, and effects included grayscale, edge detection, poster effect, sketch effect.
+\end{itemize}
+\space
+\textbf{Graph Editor} \hfill (Mar'14)
+\begin{itemize}
+\item An interactive web application to create, edit and save graphs using mouse clicks and keyboard shortcuts.
+\item The backend, written in \textbf{JSP}, used efficient graph algorithms calculate minimum spanning forest and shortest distance.
+\end{itemize}
+\space
+\textbf{IITH Student Satellite Project} \hfill (Feb'14 - Apr'15)
+\begin{itemize}
+\item Worked as a part of the \textbf{On-board Data Handling} subsystem team.
+\end{itemize}
+\space
+\textbf{Jeb Kharchi - Expense Manager} \textit{Self-motivated} \hfill (Dec'13 - Feb'14)
+\begin{itemize}
+\item An \textbf{Android} application to aid in managing personal expenses.
+\item Includes features to keep track of incomes, expenses and debts.
+\end{itemize}
+\space
+\textbf{Room Booking Portal} \textit{Guide: Dr N. R. Aravind, CSE Dept., IIT Hyderabad} \hfill (Mar'13 - Apr'13)
+\begin{itemize}
+\item A web portal to book lecture halls and other classrooms of the institute.
+\item Features include search, bookings, approvals, clash detection, admin panel, user profiles, etc.
+\item Worked in a team of 5 to develop frontend on HTML, CSS; and backend on PHP, MySQL.
+\end{itemize}
+\space
+\textbf{LenDen - E-commerce} \textit{Club Project} \hfill (Feb'13 - Apr'13)
+\begin{itemize}
+\item A website for buying and selling second-hand products based on bids set by buyers.
+\item Worked in a team of 4 to develop frontend on HTML, CSS, JavaScript and backend on JSP, MySQL.
+\end{itemize}
+
+\heading{Technical Proficiency}
+\begin{itemize}
+\item \textbf{Languages} - C, C++, Java, C\#, Python, HTML, CSS, JavaScript, PHP, JSP, SQL.
+\item \textbf{Technologies/Frameworks} - Web, Django, Android, Flex, Bison, ANTLR, Solr, COSMOS, Scope.
+\end{itemize}
+
+\heading{Key Courses Undertaken}
+\begin{multicols}{2}
+\begin{itemize}
+\item Computer Vision
+\item Topics in Database Management Systems
+\item Parallel and Concurrent Programming
+\item Network Engineering
+\item Topics in Networks - SDN
+\item Linear Optimization
+\item Machine Learning
+\item Numerical Linear Algebra for Data Analysis
+\item Database Systems
+\item Computer Networks
+\item Compilers
+\item Operating Systems
+\item Topics in Computing - Data Stream Algorithms, Nearest Neighbour Problem
+\item Design and Analysis of Algorithms
+\item Theory of Computation
+\item Software Technologies
+\item Data Structures \& Algorithms
+\item Discrete Maths
+\end{itemize}
+\end{multicols}
+
+\heading{Positions of Responsibility}
+\begin{itemize}
+\item \textit{Co-ordinator} of \textit{Kludge, the information security and networking club} of \textit{IIT Hyderabad} for 2014-15.
+\item \textit{Co-ordinator} of the \textit{Training and Placement Cell} for CSE-2012 batch at \textit{IIT Hyderabad}.
+\item Member of the \textit{Network Systems and Research Innovation Group (NSRIG)} of \textit{IIT Hyderabad} for 2013-15.
+\item \textit{Secretary} of \textit{Infero, the programming and software development club} of \textit{IIT Hyderabad} for 2013-14.
+\item \textit{Student Convenor} for \textit{National Service Scheme}, \textit{IIT Hyderabad} for 2013-14.
+\item Member of \textit{Prakriti, the Nature Club} of \textit{IIT Hyderabad} for 2013-14.
+\item \textit{Student Mentor} for the year 2013, as a part of the \textit{Mentorship Programme}.
+\item Worked as volunteer in \textit{ELAN 2012} (Cultural cum Technical Festival of \textit{IIT Hyderabad}).
+\item Served as the \textit{College Captain} in school for the session 2011-2012.
+\item Worked as an \textit{Escort} in \textit{Quanta 2009} and \textit{Quanta 2010} (International Competition for Science, Mathematics, Mental Ability and Electronics).
+\end{itemize}
+
+\end{document}
