@@ -24,6 +24,9 @@
 	urlcolor=blue
 }
 
+% Custom command to define table column width relative to the text width
+\newcommand{\cl}[1]{\dimexpr #1\textwidth - 2\tabcolsep}
+
 \begin{document}
 
 \begin{table}[ht]
@@ -33,15 +36,15 @@
 \begin{minipage}{0.4\linewidth}
 \begin{flushleft}
 \textbf{Agam Agarwal \\
-UG Fourth Year (B.Tech) \\
-Computer Science and Engineering \\
-Indian Institute of Technology, Hyderabad}
+Trust and Safety Engineer \\
+Google India Pvt. Ltd. \\
+}
 \end{flushleft}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}{0.4\linewidth}
 \begin{flushleft}
-\textbf{Email: \href{mailto:cs12b1003@iith.ac.in}{cs12b1003@iith.ac.in} \\
+\textbf{Email: \href{mailto:agamagarwal@google.com}{agamagarwal@google.com} \\
 Personal Email: \href{mailto:agammaster@gmail.com}{agammaster@gmail.com} \\
 Github - \url{https://github.com/AgamAgarwal} \\
 Profile- \url{https://in.linkedin.com/in/agamagarwal} \\
@@ -53,16 +56,18 @@ Contact - +91-950-500-8963}
 \heading{Education}
 
 \rowcolors{2}{white}{gray!25}
-\begin{tabular}{lllll}
+\begin{tabular}{p{\cl{.2}} p{\cl{.3}} p{\cl{.3}} p{\cl{.1}} p{\cl{.1}}}
 \textbf{Examination} & \textbf{University/Board} & \textbf{Institute} & \textbf{Year} & \textbf{CGPA/\%} \\
-Graduation (on going) & IIT Hyderabad & IIT Hyderabad & 2016 & 9.76 (till 7th semester) \\
-Intermediate & ISC & City Montessori School, Chowk & 2012 & 94.33 \\
-High School & ICSE & City Montessori School, Chowk & 2010 & 94.14
+Graduation & IIT Hyderabad & IIT Hyderabad & 2016 & 9.78/10 \\
+Intermediate & ISC & City Montessori School, Chowk & 2012 & 94.33\% \\
+High School & ICSE & City Montessori School, Chowk & 2010 & 94.14\%
 \end{tabular}
 
 \heading{Achievements}
 
 \begin{itemize}
+\item \textbf{President's Gold Medallist} from IIT Hyderabad with an Cumulative Grade Point Average of \textbf{9.78/10}.
+
 \item Won \textbf{Microsoft's Capture the Flag} (a national-level information security and hacking competition) for two years: \textbf{first} place in \textbf{HackCon'14} and \textbf{second} place in \textbf{Build the Shield'15}.
 
 \item Secured the \textbf{second} place in OpenSoft challenge in \textbf{Inter IIT Tech Meet-2015}.
@@ -90,9 +95,14 @@ High School & ICSE & City Montessori School, Chowk & 2010 & 94.14
 
 \heading{Work Experience}
 
+\textbf{Google India} (\url{www.google.com}) - Trust and Safety Engineer \hfill (July'16 - present)
+\begin{itemize}
+\item Working on tools and platforms helping in identify abuse patterns.
+\end{itemize}
+\space
 \textbf{Microsoft IDC} (\url{www.microsoft.com}) - Software Engineering Intern \hfill (May'15 - July'15)
 \begin{itemize}
-\item Worked on ``Neighbourhood Inference for Bing Map Local Entitie".
+\item Worked on ``Neighbourhood Inference for Bing Map Local Entities".
 \item The project involved inferring Locality information for entities based on the available information.
 \end{itemize}
 \space
